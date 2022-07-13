@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://101.43.104.192:3306/turing
+    username: root
+    password: '@Jx920561'
+
+server:
+  port: 7732

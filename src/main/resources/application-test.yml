@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql:///turing
+    username: root
+    password: 159357Asd
+
+
+server:
+  port: 7732
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
