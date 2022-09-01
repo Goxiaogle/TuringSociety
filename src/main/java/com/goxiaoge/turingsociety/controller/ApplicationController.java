@@ -1,17 +1,13 @@
 package com.goxiaoge.turingsociety.controller;
 
 import com.goxiaoge.turingsociety.pojo.Application;
-import com.goxiaoge.turingsociety.utils.result.HttpResult;
-import com.goxiaoge.turingsociety.utils.result.Result;
 import com.goxiaoge.turingsociety.service.ApplicationService;
 import com.goxiaoge.turingsociety.utils.chainbuilder.StringChainBuilder;
-import org.apache.coyote.Request;
-import org.springframework.boot.system.ApplicationPid;
+import com.goxiaoge.turingsociety.utils.result.HttpResult;
+import com.goxiaoge.turingsociety.utils.result.Result;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 
 @RestController
 public class ApplicationController {
@@ -35,6 +31,12 @@ public class ApplicationController {
     @GetMapping("/application/{id}")
     public Result<Application> getApplicationById(@PathVariable Long id) {
         return HttpResult.success(service.getById(id));
+    }
+
+    @RequestMapping("/test")
+    public Application sdhkajhasui() {
+        
+        return new Application();
     }
 
     @PatchMapping("/application/{id}")

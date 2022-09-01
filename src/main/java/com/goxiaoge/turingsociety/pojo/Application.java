@@ -8,7 +8,6 @@ import com.goxiaoge.turingsociety.enums.ApplicationStatus;
 import com.goxiaoge.turingsociety.utils.chainbuilder.annotation.Between;
 import com.goxiaoge.turingsociety.utils.chainbuilder.annotation.Match;
 import com.goxiaoge.turingsociety.utils.chainbuilder.annotation.NotBlank;
-import com.goxiaoge.turingsociety.utils.chainbuilder.annotation.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
