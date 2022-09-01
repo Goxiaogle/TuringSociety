@@ -33,12 +33,6 @@ public class ApplicationController {
         return HttpResult.success(service.getById(id));
     }
 
-    @RequestMapping("/test")
-    public Application sdhkajhasui() {
-        
-        return new Application();
-    }
-
     @PatchMapping("/application/{id}")
     public Result<Boolean> updateApplication(@RequestBody Application application,
                                              @PathVariable Long id) {
